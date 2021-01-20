@@ -54,7 +54,7 @@ final class FlickrAPIViewModel: ObservableObject {
                 let jsonData = try decoder.decode(FlickrAPIModel.self, from: data)
                 DispatchQueue.main.async {
                     self.data = jsonData
-                    print(self.data)
+                    print(self.data!)
                 }
 
             } catch {
