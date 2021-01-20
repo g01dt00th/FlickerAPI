@@ -1,1 +1,1 @@
-# FlickerAPI
+# FlickrAPI
