@@ -15,6 +15,12 @@ struct ContentView: View {
             VStack {
                 Text("Hello, world!")
                     .padding()
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+                            print(vm.photos)
+                        })
+
+                    }
             }.navigationBarTitle("mainViewTitleKey")
         }
     }

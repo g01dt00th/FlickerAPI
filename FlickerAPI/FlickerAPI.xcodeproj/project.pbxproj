@@ -18,6 +18,7 @@
 		5E41721625B6D9C000E2FEDB /* FlickrAPIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41721525B6D9C000E2FEDB /* FlickrAPIViewModel.swift */; };
 		5EE09FA925B8381C00FFE355 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EE09FAB25B8381C00FFE355 /* Localizable.strings */; };
 		5EE09FAF25B867BB00FFE355 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE09FAE25B867BB00FFE355 /* PhotoView.swift */; };
+		5EE09FB225B86CBE00FFE355 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE09FB125B86CBE00FFE355 /* PhotoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		5EE09FAA25B8381C00FFE355 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5EE09FAC25B8383700FFE355 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5EE09FAE25B867BB00FFE355 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		5EE09FB125B86CBE00FFE355 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				5E41721225B6D7F400E2FEDB /* FlickrAPIModel.swift */,
+				5EE09FB125B86CBE00FFE355 /* PhotoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				5E4171F425B6CFB900E2FEDB /* AppDelegate.swift in Sources */,
 				5E41721325B6D7F400E2FEDB /* FlickrAPIModel.swift in Sources */,
 				5EE09FAF25B867BB00FFE355 /* PhotoView.swift in Sources */,
+				5EE09FB225B86CBE00FFE355 /* PhotoModel.swift in Sources */,
 				5E4171F625B6CFB900E2FEDB /* SceneDelegate.swift in Sources */,
 				5E4171F825B6CFB900E2FEDB /* ContentView.swift in Sources */,
 			);

@@ -15,6 +15,9 @@ final class FlickrAPIViewModel: ObservableObject {
         }
     }
     
+    @Published var photos = [PhotoModel]()
+    
+    
     private let urlSession: URLSession = {
         let cache = URLCache(memoryCapacity: 10_485_760, diskCapacity: 52_428_800)
 
@@ -54,7 +57,7 @@ final class FlickrAPIViewModel: ObservableObject {
                 let jsonData = try decoder.decode(FlickrAPIModel.self, from: data)
                 DispatchQueue.main.async {
                     self.data = jsonData
-                    print(self.data!)
+                    self.prepareData()
                 }
 
             } catch {
@@ -65,7 +68,17 @@ final class FlickrAPIViewModel: ObservableObject {
 
     }
     
-    func convert(server_id: String, id: String, secret: String) -> URL? {
+    func prepareData() {
+        data?.photos.photo.forEach { photo in
+            if let url = self.convertURL(server_id: photo.server, id: photo.id, secret: photo.secret) {
+                let descrition = photo.title
+                self.photos.append(PhotoModel(url: url, description: descrition))
+            }
+        }
+    }
+    
+    
+    private func convertURL(server_id: String, id: String, secret: String) -> URL? {
         URL(string: "https://live.staticflickr.com/\(server_id)/\(id)_\(secret)_m.jpg")
     }
 }
