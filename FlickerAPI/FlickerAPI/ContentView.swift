@@ -12,13 +12,15 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
+            
             if vm.photos.isEmpty {
                 ActivityView()
                     .padding()
+            } else {
+                PhotoListView()
+                    .navigationBarTitle("mainViewTitleKey")
             }
-            List(vm.photos) { photo in
-                UrlImageView(urlString: photo.url)
-            }.navigationBarTitle("mainViewTitleKey")
+            
         }
     }
 }

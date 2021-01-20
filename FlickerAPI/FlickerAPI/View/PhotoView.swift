@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct PhotoView: View {
-    var img: PhotoModel?
+    var photo: PhotoModel?
     
     var body: some View {
-        if let img = img {
-            UrlImageView(urlString: img.url)
-        } else {
-            Image(systemName: "lasso.sparkles")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 240, height: 160)
-        }
+
+        
+        UrlImageView(urlString: photo?.url)
+            .frame(width: UIScreen.main.bounds.width - 20, alignment: .center)
+            .cornerRadius(10, antialiased: true)
+            .shadow(radius: 10)
+
+
     }
 }
 

@@ -79,6 +79,6 @@ final class FlickrAPIViewModel: ObservableObject {
     
     
     private func convertURL(server_id: String, id: String, secret: String) -> String {
-        "https://live.staticflickr.com/\(server_id)/\(id)_\(secret)_q.jpg"
+        "https://live.staticflickr.com/\(server_id)/\(id)_\(secret)_n.jpg"
     }
 }

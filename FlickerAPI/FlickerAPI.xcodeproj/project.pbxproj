@@ -22,6 +22,8 @@
 		B45CCE7C25B89F9200A703DC /* UrlImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45CCE7B25B89F9200A703DC /* UrlImageModel.swift */; };
 		B45CCE7F25B89FE700A703DC /* UrlImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45CCE7E25B89FE700A703DC /* UrlImageView.swift */; };
 		B45CCE8225B8A37200A703DC /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45CCE8125B8A37200A703DC /* ActivityView.swift */; };
+		B4ACCF2125B8D2EB00E245D8 /* PhotoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ACCF2025B8D2EB00E245D8 /* PhotoListView.swift */; };
+		B4ACCF2625B8D9F200E245D8 /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ACCF2525B8D9F200E245D8 /* PhotoDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		B45CCE7B25B89F9200A703DC /* UrlImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlImageModel.swift; sourceTree = "<group>"; };
 		B45CCE7E25B89FE700A703DC /* UrlImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlImageView.swift; sourceTree = "<group>"; };
 		B45CCE8125B8A37200A703DC /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		B4ACCF2025B8D2EB00E245D8 /* PhotoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListView.swift; sourceTree = "<group>"; };
+		B4ACCF2525B8D9F200E245D8 /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +125,10 @@
 			isa = PBXGroup;
 			children = (
 				5EE09FAE25B867BB00FFE355 /* PhotoView.swift */,
+				B4ACCF2525B8D9F200E245D8 /* PhotoDetailView.swift */,
 				B45CCE7E25B89FE700A703DC /* UrlImageView.swift */,
 				B45CCE8125B8A37200A703DC /* ActivityView.swift */,
+				B4ACCF2025B8D2EB00E245D8 /* PhotoListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -213,8 +219,10 @@
 				B45CCE7F25B89FE700A703DC /* UrlImageView.swift in Sources */,
 				B45CCE8225B8A37200A703DC /* ActivityView.swift in Sources */,
 				5E41721325B6D7F400E2FEDB /* FlickrAPIModel.swift in Sources */,
+				B4ACCF2125B8D2EB00E245D8 /* PhotoListView.swift in Sources */,
 				5EE09FAF25B867BB00FFE355 /* PhotoView.swift in Sources */,
 				5EE09FB225B86CBE00FFE355 /* PhotoModel.swift in Sources */,
+				B4ACCF2625B8D9F200E245D8 /* PhotoDetailView.swift in Sources */,
 				B45CCE7C25B89F9200A703DC /* UrlImageModel.swift in Sources */,
 				5E4171F625B6CFB900E2FEDB /* SceneDelegate.swift in Sources */,
 				5E4171F825B6CFB900E2FEDB /* ContentView.swift in Sources */,

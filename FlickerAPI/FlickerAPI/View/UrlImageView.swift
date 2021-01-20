@@ -20,9 +20,7 @@ struct UrlImageView: View {
                 .resizable()
                 .scaledToFit()
         } else {
-            Image(systemName: "lasso.sparkles")
-                .resizable()
-                .scaledToFit()
+            ActivityView()
         }
     }
     
@@ -30,6 +28,8 @@ struct UrlImageView: View {
 
 struct UrlImageView_Previews: PreviewProvider {
     static var previews: some View {
-        UrlImageView(urlString: "https://live.staticflickr.com/65535/50849373113_c2251a7a4d_q.jpg")
+        UrlImageView(urlString: "https://live.staticflickr.com/65535/50849373113_c2251a7a4d_w.jpg")
+        
+        UrlImageView(urlString: nil)
     }
 }
