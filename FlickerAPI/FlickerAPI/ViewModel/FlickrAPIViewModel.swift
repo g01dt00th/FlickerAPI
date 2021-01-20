@@ -70,15 +70,15 @@ final class FlickrAPIViewModel: ObservableObject {
     
     func prepareData() {
         data?.photos.photo.forEach { photo in
-            if let url = self.convertURL(server_id: photo.server, id: photo.id, secret: photo.secret) {
-                let descrition = photo.title
-                self.photos.append(PhotoModel(url: url, description: descrition))
-            }
+            let url = self.convertURL(server_id: photo.server, id: photo.id, secret: photo.secret)
+            let descrition = photo.title
+            self.photos.append(PhotoModel(url: url, description: descrition))
+            
         }
     }
     
     
-    private func convertURL(server_id: String, id: String, secret: String) -> URL? {
-        URL(string: "https://live.staticflickr.com/\(server_id)/\(id)_\(secret)_m.jpg")
+    private func convertURL(server_id: String, id: String, secret: String) -> String {
+        "https://live.staticflickr.com/\(server_id)/\(id)_\(secret)_q.jpg"
     }
 }

@@ -12,15 +12,12 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                Text("Hello, world!")
+            if vm.photos.isEmpty {
+                ActivityView()
                     .padding()
-                    .onAppear {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-                            print(vm.photos)
-                        })
-
-                    }
+            }
+            List(vm.photos) { photo in
+                UrlImageView(urlString: photo.url)
             }.navigationBarTitle("mainViewTitleKey")
         }
     }
@@ -30,7 +27,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["en", "ru"], id: \.self) { lang in
                     ContentView()
-                        .environment(\.locale, .init(identifier: lang)) // а ведь раньше работало, эх... такую классную фичу сломали
+                        .environment(\.locale, .init(identifier: lang))
                         .environmentObject(FlickrAPIViewModel())
                 }
     }

@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct PhotoModel {
-    let url: URL
+struct PhotoModel: Identifiable {
+    let id = UUID().uuidString
+    let url: String
     let description: String
 }

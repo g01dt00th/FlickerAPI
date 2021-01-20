@@ -21,6 +21,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView().environmentObject(vm)
+        
+        if !ProcessInfo().isOperatingSystemAtLeast(OperatingSystemVersion(majorVersion: 14, minorVersion: 0, patchVersion: 0)) {
+                    UITableView.appearance().separatorColor = .clear
+                    print("[SceneDelegate] iOS13 List separators fix added")
+                }
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
